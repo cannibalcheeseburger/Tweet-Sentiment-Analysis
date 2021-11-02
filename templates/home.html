@@ -1,0 +1,26 @@
+{% extends "layout.html" %} {% load static %} {% block content %} {% block styles %}
+
+
+<link rel="stylesheet" href="{% static 'news-block.css' %}">
+
+<div class="container">
+    <div class="row gy-5 overflow-hidden">
+        {% for tweet in tweets %}
+
+        <div class="col-6">
+            <div class="data-row">
+                <a href={% url 'tweet_detail' tweet.id%} style="display:inline-block; text-decoration:none">
+                    <p id="title">{{tweet.text}}</p>
+                </a>
+                <span id="date">
+             {{tweet.date}}
+           </span>
+                <div id="author" align="right">—  {{tweet.user}} </div>
+            </div>
+        </div>
+
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock %} {% endblock %}
