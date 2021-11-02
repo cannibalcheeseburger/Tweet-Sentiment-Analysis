@@ -1,0 +1,19 @@
+https://www.kaggle.com/kazanova/sentiment140
+
+https://www.ics.uci.edu/~lopes/teaching/cs221W12/slides/CS%20221%20Information%20Retrieval%20Projects.pdf
+
+https://www.kaggle.com/paoloripamonti/twitter-sentiment-analysis
+dataset explain:
+```
+target: the polarity of the tweet (0 = negative, 2 = neutral, 4 = positive)
+
+ids: The id of the tweet ( 2087)
+
+date: the date of the tweet (Sat May 16 23:58:44 UTC 2009)
+
+flag: The query (lyx). If there is no query, then this value is NO_QUERY.
+
+user: the user that tweeted (robotickilldozr)
+
+text: the text of the tweet (Lyx is cool)
+```
