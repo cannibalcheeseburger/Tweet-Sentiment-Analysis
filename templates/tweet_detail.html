@@ -13,7 +13,12 @@
                 NEUTRAL
                 {% else %}
                 POSTIVE
-                {% endif %}</cite></footer>
+                {% endif %}
+                <br>
+                {% if tweet.score %}
+                {{tweet.score}}
+                {% endif %}
+            </cite></footer>
         </blockquote>
     </div>
 </div>

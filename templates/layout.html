@@ -20,14 +20,14 @@
     <title>Tweet Sentimental Analysis</title>
     <script src="https://kit.fontawesome.com/e2635e655a.js" crossorigin="anonymous"></script>
   </head>
+
+
   <body style=" background-color: #f8f9fa;">
 
     <nav id="top-heading" class="navbar  navbar-light" style="background-color: #e9ecef;">
       <div class=" aligning container-fluid">
         <div class="navbar-brand brand-image">
-          <img  src="{% static 'completed.png' %}" alt="" width="50" height="40" class="d-inline-block align-text-top">
-
-
+          <a href="{% url 'predict_tweet' %}"> Predict </a>
         </div>
         <span id="site-name">
           Tweets
